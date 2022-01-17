@@ -1,2 +1,2 @@
 # Sticky
-Make sticky notes and save them for later!
+Make sticky notes and access them through the web!
