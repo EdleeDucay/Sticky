@@ -7,7 +7,7 @@ import Signup from './routes/Signup'
 
 function App() {
   return (
-    <Router>
+    <Router basename='/sticky'>
       <AuthProvider>
         <Routes>
           <Route path="/login" element={<Login/>}/>
