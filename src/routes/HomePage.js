@@ -105,7 +105,10 @@ export default function Homepage() {
             <SuccessSnackbar open={snackbarOpen} setOpen={setSnackbarOpen}/>
             <DeleteModal open={delModalOpen} setOpen={setDelModalOpen} handleDeleteNote={handleDeleteNote}/>
             <div id="container">
+                {notes ? 
                 <StickyList notes={notes} handleSaveNote={handleSaveNote} handleChange={handleChange} handleDeleteNote={handleDeleteModal}/>
+                    : null
+                }
 
                 <button class="add-note" type="button" onClick={createNote}>+</button>
 

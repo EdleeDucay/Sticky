@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useContext, useState, useEffect } from "react";
-import { BACKEND_URL, BACKEND_PORT } from "../constants";
+import { BACKEND_BASE_URL } from "../constants";
 
 const AuthContext = React.createContext();
 
@@ -16,7 +16,7 @@ export function AuthProvider({ children }) {
     try {
       const response = await axios({
           method: 'post',
-          url: `http://${BACKEND_URL}:${BACKEND_PORT}/sticky/users/login`,
+          url: `${BACKEND_BASE_URL}/sticky/users/login`,
           data: data
       })
 
@@ -34,7 +34,7 @@ export function AuthProvider({ children }) {
     try {
       const response = await axios({
             method: 'post',
-            url: `http://${BACKEND_URL}:${BACKEND_PORT}/sticky/users/signup`,
+            url: `${BACKEND_BASE_URL}/sticky/users/signup`,
             data: data
       })
 

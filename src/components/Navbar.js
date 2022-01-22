@@ -8,7 +8,7 @@ export default function Navbar() {
                 <Typography variant='h4' sx={{pl: 5}}>Sticky</Typography>
                 <Box sx={{ flexGrow: 1 }} />
                 <Box sx={{pr: 5}}>
-                    <Button href='/login' color='secondary' variant='contained'><Typography>Logout</Typography></Button>
+                    <Button href='./login' color='secondary' variant='contained'><Typography>Logout</Typography></Button>
                 </Box>
 
             </Toolbar>
