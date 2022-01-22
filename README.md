@@ -7,6 +7,6 @@ The main reason I built this app for web and not mobile was for quick, easy and 
 ### How To Use
 Once logged into an account press the '+' button to create a sticky note. 
 
-Notes will save to the database when you press the blue icon on the bottom left of a sticky
+Notes (currently) will save to the database when you press the blue icon on the bottom left of a sticky
 
-Deleting a note will remove it from the database so becareful.
+Deleting a note will remove it from the database so be careful.
